@@ -66,7 +66,7 @@
       ctx.globalCompositeOperation = "source-over";
       this.resize();
       // #112333, #133311, #303030
-      ctx.fillStyle = "#303030";
+      ctx.fillStyle = "#331811";
       ctx.globalCompositeOperation = "lighter";
       for (const p of particles)
         p.init();
