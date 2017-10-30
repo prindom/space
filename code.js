@@ -10,7 +10,7 @@
     constructor() {
       // changing these parameters can give very different results
       this.damp = 0.00002; // remember a very small amount of the last direction
-      this.accel = 100; // move very quickly
+      this.accel = 1000; // move very quickly
       this.init();
     }
     init() {
@@ -78,10 +78,10 @@
   // init pen
   const ctx = canvas.init();
   const attractors = Array.from({
-    length: 20
+    length: 6
   }, () => new Particle());
   const particles = Array.from({
-    length: 20000
+    length: 8000
   }, () => new Particle());
   canvas.reset();
   // move and draw particles
